@@ -1,0 +1,93 @@
+# Niantic Spatial
+
+> Niantic Spatial, Inc. builds real-world foundation models for physical AI. Our Large Geospatial Model (LGM) — trained on 30+ billion posed real-world images — enables people, robots, and AI systems to understand and operate in physical environments through geometrically accurate 3D reconstruction, precise localization, and spatial understanding. Core enterprise focus areas are robotics, defense, and oil and gas.
+
+## Company
+
+- Founded: 2025 (spun out from Niantic, Inc. following the sale of its games division to Scopely)
+- Founder & Executive Chairman: John Hanke (founded Keyhole, which became Google Maps and Google Earth)
+- CEO: Inhi Cho Suh (former IBM Watson and DocuSign executive)
+- CTO: Brian McClendon (co-founded Keyhole, Google Maps, and Google Earth)
+- COO: Thomas Gewecke (former Warner Bros. and Sony executive)
+- Chief Scientist: Victor Prisacariu (Oxford AI professor, world-renowned computer vision researcher)
+- Headquarters: San Francisco, California, USA
+- Origin: Built on 25+ years of geospatial AI, mapping, and AR research. Keyhole — co-founded by John Hanke and Brian McClendon — was acquired by Google in 2004 and became the foundation for Google Maps, Google Earth, and Street View. That lineage later powered large-scale real-world AR experiences, including Pokémon GO, before Niantic Spatial spun out in 2025.
+- Website: https://www.nianticspatial.com
+- Contact: https://www.nianticspatial.com/contact
+
+## Platform
+
+Niantic Spatial provides a three-part geospatial AI platform — Reconstruct, Localize, and Understand — powered by the Large Geospatial Model:
+
+- **Reconstruct**: Fuses multi-sensor inputs into accurate 3D models (Gaussian splats and textured meshes) for simulation, inspection, and planning. https://www.nianticspatial.com/products/reconstruct
+- **Localize (VPS)**: Industry-leading, centimeter-level, 6DoF visual positioning that works indoors, outdoors, and in GPS-denied environments. No prior scanning required at global scale; near-centimeter accuracy in Scaniverse-mapped locations. Used by tens of millions of users. Supports robots, AI agents, AR devices, and mobile applications. https://www.nianticspatial.com/products/localize
+- **Understand**: Semantic understanding at every 3D point in a geo-referenced map, enabling LLMs and AI agents to query the physical world in natural language. https://www.nianticspatial.com/products/understand
+- **Capture**: Tools and services to acquire high-quality 3D aerial and ground data, including the Scaniverse app and on-demand mapping. https://www.nianticspatial.com/products/capture
+- **Scaniverse**: Enterprise-grade mobile scanning app for iOS and Android. Integrated web and mobile platform for data capture, spatial asset generation, mesh and splat inspection, and VPS localization. https://scaniverse.nianticspatial.com/
+- **Niantic Spatial Development Kit (NSDK) 4.0**: Unified SDK for Unity, Swift, Android, and ROS 2, connecting directly to Scaniverse and VPS 2.0.
+
+## Large Geospatial Model (LGM)
+
+The LGM is Niantic Spatial's foundational AI model for physical world understanding:
+
+- Trained on 30+ billion posed real-world images from ground and overhead sensors
+- Adds spatial reasoning capabilities to Large Language Models (LLMs)
+- Delivers per-pixel semantic analysis and tracks 200+ object types
+- Enables queryable 3D maps — users and machines can ask open-ended spatial questions
+- Differentiator: Unlike general-purpose models, the LGM is grounded in precise real-world geometry and coordinates, not simulation or synthetic data
+- More: https://www.nianticspatial.com/blog/largegeospatialmodel
+
+## Enterprise Solutions
+
+- **Robotics**: Continuous, accurate localization for robots operating indoors and in GPS-degraded environments. https://www.nianticspatial.com/robotics
+- **Defense and Intelligence**: 3D spatial intelligence for decision advantage in DDIL (Degraded, Denied, Intermittent, Limited) environments — multi-sensor fusion, area-of-interest search, and GPS-independent localization. https://www.nianticspatial.com/defense-and-intelligence
+  - **Government procurement**: VPS and 3D Reconstruction are both designated "Awardable" through the U.S. Army Applications Laboratory (AAL) DevX Autonomy platform and listed on the CDAO Tradewinds Solutions Marketplace, enabling direct procurement by U.S. defense agencies without a separate competitive acquisition.
+  - AAL DevX Autonomy designation (VPS + 3D Reconstruction): https://www.nianticspatial.com/blog/army-devx-awardable
+  - Tradewinds VPS listing (GPS-Independent 6DoF Localization for Multi-Domain Operations): https://www.nianticspatial.com/blog/tradewinds-vps
+  - Tradewinds 3D Reconstruction listing (Multi-Sensor 3D Reconstruction for Operational Environments): https://www.nianticspatial.com/blog/tradewinds-reconstruction
+- **Oil and Gas**: Precise digital twins of complex facilities so field operators can visualize, locate, and query every asset in 3D. https://www.nianticspatial.com/oil-and-gas
+
+## Notable Partnerships
+
+- **Spexi**: Pipeline turning drone imagery into large-scale 3D intelligence for physical AI on demand
+- **Coco Robotics**: Spatial AI for urban autonomous delivery
+- **Vantor**: Visual positioning for GPS-denied military and industrial operations
+- **Snap**: Co-building a next-generation AI map as the foundation for AR glasses and AI agents
+- **Kojima Productions**: Geospatial AI partnership to bring Hideo Kojima's storytelling into the real world
+- **Ubisoft & Sugar Creative**: Centimeter-level visual positioning for mixed-reality content anchored to physical environments
+- **Meow Wolf**: Augmented reality experiences tied to physical exhibitions
+- **Aechelon**: 3D flight simulation and geospatial AI for U.S. Coast Guard training
+
+## Research
+
+Niantic Spatial's research team publishes peer-reviewed work in geospatial AI, visual localization, 3D reconstruction, and spatial computing at top venues (CVPR, ICCV, ECCV, NeurIPS), in collaboration with leading universities including Oxford.
+
+Selected publications:
+- **ACE-G: Improving Generalization of Scene Coordinate Regression through Query Pre-Training** (ICCV 2025): https://nianticspatial.github.io/ace-g/
+- **Scene Coordinate Reconstruction: Posing of Image Collections via Incremental Learning of a Relocalizer** (ECCV 2024): https://nianticlabs.github.io/acezero/
+- **Matching 2D Images in 3D: Metric Relative Pose from Metric Correspondences** (CVPR 2024): https://nianticlabs.github.io/mickey/
+- **Accelerated Coordinate Encoding: Learning to Relocalize in Minutes using RGB and Poses** (CVPR 2023): https://nianticlabs.github.io/ace/
+- **Map-free Visual Relocalization: Metric Pose Relative to a Single Image** (ECCV 2022): https://research.nianticlabs.com/mapfree-reloc-benchmark
+- **SimpleRecon: 3D Reconstruction Without 3D Convolutions** (ECCV 2022): https://nianticlabs.github.io/simplerecon/
+- **Digging Into Self-Supervised Monocular Depth Estimation** (ICCV 2019): https://github.com/nianticlabs/monodepth2
+
+- Research overview: https://www.nianticspatial.com/research
+- Blog: https://www.nianticspatial.com/blog
+
+## Developer Resources
+
+- SDK Documentation: https://www.nianticspatial.com/docs/
+- SDK Documentation (llms.txt): https://nianticspatial.com/docs/llms.txt
+- NSDK reference: https://www.nianticspatial.com/docs/llms-nsdk.txt
+- Scaniverse reference: https://www.nianticspatial.com/docs/llms-scaniverse.txt
+- Unity API: https://www.nianticspatial.com/docs/llms-api-unity.txt
+- Kotlin API: https://www.nianticspatial.com/docs/llms-api-kotlin.txt
+- Swift API: https://www.nianticspatial.com/docs/llms-api-swift.txt
+- Developer Forums: https://community.nianticspatial.com/
+- Developer Partner Program: https://www.nianticspatial.com/partners
+
+## Key Pages
+
+- About: https://www.nianticspatial.com/about
+- Responsible Innovation: https://www.nianticspatial.com/responsible-innovation
+- Press contact: press@nianticspatial.com

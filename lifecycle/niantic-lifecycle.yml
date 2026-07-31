@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.nianticspatial.com/docs/nsdk/release_notes/index.html
+versioning:
+  scheme: semver
+  current: '4.1'
+  line: NSDK 4.x (Niantic Spatial Development Kit; formerly Lightship ARDK)
+  docs: https://www.nianticspatial.com/docs/nsdk/
+deprecation:
+  policy: >-
+    Older SDK lines enter a fixed support window and then reach end-of-life,
+    after which backend infrastructure changes cause unmigrated apps to stop
+    functioning. ARDK versions earlier than 3.13.0 (including all ARDK 2.x)
+    entered a 6-month support window 2025-05-01 and were end-of-lifed 2025-11-01.
+  migration:
+    - note: 'Lightship ARDK 3.x -> Niantic Spatial NSDK 4.x'
+      guide: https://www.nianticspatial.com/docs/nsdk/migration_guide/
+    - note: 'Self-serve account/content migration from lightship.dev to Scaniverse'
+      deadline: '2027-02-27'
+  eol:
+    - line: 'ARDK < 3.13.0 (incl. 2.x)'
+      support_window_start: '2025-05-01'
+      end_of_life: '2025-11-01'
+  sunset_header: unknown
+sla:
+  url: null
+  uptime_target: null
+status_page: null

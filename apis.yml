@@ -1,8 +1,29 @@
 aid: niantic
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/niantic.png
 name: Niantic
-description: Niantic is a company surfaced as a portfolio company of battery-ventures, crv, ivp, spark-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Niantic Spatial, Inc. (spun out of Niantic, Inc. in 2025 after the sale of its
+  games division to Scopely) builds real-world foundation models for physical AI.
+  Its Large Geospatial Model (LGM), trained on 30+ billion posed real-world images,
+  powers a three-part geospatial platform — Reconstruct (3D models via Gaussian
+  splats and meshes), Localize (VPS, centimeter-level 6DoF visual positioning that
+  works indoors, outdoors, and in GPS-denied environments), and Understand (semantic
+  querying of 3D maps). Developers build on the Niantic Spatial Development Kit
+  (NSDK 4.x, formerly the Lightship ARDK) across Unity, Swift, Android, and ROS 2,
+  connecting to Scaniverse and VPS 2.0. Enterprise focus areas include robotics,
+  defense and intelligence, and oil and gas.
 url: https://raw.githubusercontent.com/api-evangelist/niantic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,10 +36,47 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
 tags:
 - Company
-apis: []
+- Geospatial
+- Augmented Reality
+- Computer Vision
+- Visual Positioning
+- Spatial Computing
+- SDK
+- Physical AI
+- Robotics
+apis:
+- name: Niantic Spatial Development Kit (NSDK)
+  description: >-
+    NSDK 4.x is Niantic Spatial's unified, SDK-first developer platform for Unity,
+    Swift, Android, and ROS 2, exposing VPS 2.0 visual positioning (centimeter-level
+    6DoF localization), semantic understanding, meshing/depth, and the VPS Coverage
+    API. Formerly the Lightship Augmented Reality Developer Kit (ARDK). Access is
+    authenticated with a Niantic Spatial token (NSDK 4.0+; legacy Lightship API key
+    for ARDK 3.x).
+  humanURL: https://www.nianticspatial.com/docs/nsdk/
+  baseURL: https://www.nianticspatial.com
+  tags:
+  - Augmented Reality
+  - Visual Positioning
+  - Geospatial
+  - SDK
+  properties:
+  - type: Documentation
+    url: https://www.nianticspatial.com/docs/nsdk/
+  - type: APIReference
+    url: https://www.nianticspatial.com/docs/api/unity/
+  - type: GettingStarted
+    url: https://www.nianticspatial.com/docs/nsdk/setup/
+  - type: Authentication
+    url: authentication/niantic-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -27,3 +85,39 @@ maintainers:
 common:
 - type: Website
   url: https://nianticlabs.com/
+- type: DeveloperPortal
+  url: https://www.nianticspatial.com/docs/
+- type: Documentation
+  url: https://www.nianticspatial.com/docs/nsdk/
+- type: APIReference
+  url: https://www.nianticspatial.com/docs/api/unity/
+- type: GettingStarted
+  url: https://www.nianticspatial.com/docs/nsdk/setup/
+- type: Support
+  url: https://community.nianticspatial.com/
+- type: Blog
+  url: https://www.nianticspatial.com/blog
+- type: GitHubOrganization
+  url: https://github.com/nianticspatial
+- type: Pricing
+  url: https://www.nianticspatial.com/pricing
+- type: TermsOfService
+  url: https://www.nianticspatial.com/terms
+- type: PrivacyPolicy
+  url: https://www.nianticspatial.com/privacy
+- type: Authentication
+  url: authentication/niantic-authentication.yml
+- type: Packages
+  url: packages/niantic-packages.yml
+- type: SDKs
+  url: packages/niantic-packages.yml
+- type: Lifecycle
+  url: lifecycle/niantic-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/niantic-lifecycle.yml
+- type: ChangeLog
+  url: changelog/niantic-changelog.yml
+- type: LLMsTxt
+  url: llms/niantic-llms.txt
+- type: DomainSecurity
+  url: security/niantic-domain-security.yml

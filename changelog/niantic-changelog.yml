@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.nianticspatial.com/docs/nsdk/release_notes/index.html
+scheme: semver
+current: '4.1'
+docs: https://www.nianticspatial.com/docs/nsdk/release_notes/index.html
+entries:
+  - version: '4.1.0'
+    date: '2026-05-20'
+    breaking: false
+    highlights:
+      - Scaniverse capture app now available on Android (capture, upload, and test localization).
+  - version: '4.0'
+    date: '2026-04-09'
+    breaking: true
+    highlights:
+      - 'NSDK 4.0 launch: unified SDK for Unity, Swift, Android, and ROS 2.'
+      - Exposes VPS 2.0 as an improved localization service for Unity, Swift, and Kotlin.
+      - Introduces token-based authentication, replacing the legacy API-key-only model used by Lightship ARDK.
+      - Reworked Swift and Kotlin SDKs aligned with native platform conventions and package managers.
+      - Adds native on-device playback for local testing/debugging without a live VPS session.
+  - version: '3.15'
+    date: '2025'
+    breaking: false
+    highlights:
+      - Drop-in, non-breaking update to the ARDK 3.x line.
+  - version: '3.13.0'
+    date: '2025-04-23'
+    breaking: false
+    highlights:
+      - Drop-in, non-breaking update compatible with all 3.x versions; became the minimum supported ARDK version (all earlier versions EOL 2025-11-01).

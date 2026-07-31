@@ -1,0 +1,55 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/nianticspatial
+notes: >-
+  Niantic Spatial distributes its first-party SDK (NSDK 4.x, formerly the
+  Lightship ARDK) as platform-native library packages hosted on GitHub, not via
+  npm/PyPI/Maven Central. Unity via UPM git URL, Android via AAR (Gradle), iOS via
+  XCFramework, plus a Meta Quest 3 Unity build. Legacy ARDK 3.x UPM lives under the
+  deprecated niantic-lightship org.
+packages:
+  - language: csharp
+    platform: unity
+    registry: github-upm
+    name: nsdk-library-upm
+    url: https://github.com/nianticspatial/nsdk-library-upm
+    install: 'Unity Package Manager -> Add package from git URL: https://github.com/nianticspatial/nsdk-library-upm.git'
+    version: 4.1.0-26051913
+    official: true
+  - language: csharp
+    platform: unity-quest3
+    registry: github-upm
+    name: nsdk-library-upm-quest3
+    url: https://github.com/nianticspatial/nsdk-library-upm-quest3
+    install: 'Unity Package Manager -> Add package from git URL (Meta Quest 3 build)'
+    official: true
+  - language: kotlin
+    platform: android
+    registry: github-aar
+    name: nsdk-library-aar
+    url: https://github.com/nianticspatial/nsdk-library-aar
+    install: 'Gradle dependency distributed as AAR'
+    official: true
+  - language: swift
+    platform: ios
+    registry: github-xcframework
+    name: nsdk-library-xcframework
+    url: https://github.com/nianticspatial/nsdk-library-xcframework
+    install: 'Add XCFramework via Xcode / Swift Package Manager'
+    official: true
+  - language: csharp
+    platform: unity
+    registry: github-upm
+    name: ardk-upm
+    url: https://github.com/niantic-lightship/ardk-upm
+    install: 'Unity Package Manager -> Add package from git URL: https://github.com/niantic-lightship/ardk-upm.git (ARDK 3.x, deprecated)'
+    version: 3.x
+    official: true
+    deprecated: true
+samples:
+  - name: nsdk-samples-csharp
+    url: https://github.com/nianticspatial/nsdk-samples-csharp
+  - name: nsdk-samples-swift
+    url: https://github.com/nianticspatial/nsdk-samples-swift
+  - name: nsdk-samples-kotlin
+    url: https://github.com/nianticspatial/nsdk-samples-kotlin
