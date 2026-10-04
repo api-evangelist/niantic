@@ -59,7 +59,7 @@ tags:
 - Company
 - Geospatial
 - Augmented Reality
-- Computer-Vision
+- Computer Vision
 - Visual Positioning
 - Spatial Computing
 - SDK
@@ -75,6 +75,7 @@ tags_raw:
 - SDK
 - Physical AI
 - Robotics
+- Computer-Vision
 apis:
 - name: Niantic Spatial Development Kit (NSDK)
   description: >-
